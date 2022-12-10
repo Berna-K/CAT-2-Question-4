@@ -1,0 +1,34 @@
+Global namespace Scope - Whereby elements are delcared outside a function or class
+ eg.
+ #include <iostream>
+ int name;
+
+ int main(){}
+
+ Local Scope - Whereby elemts are declared withing functions and only accessible within the function
+ eg.
+
+ int main()
+ {
+    int name;
+ }
+
+Function-Prototype scope - Whereby elements are declared within the parameter line of a function without necessarily having identifier names.
+eg.
+
+int access(float x);
+
+Function Scope - Whereby labels are referenced using goto statements within a function to perform certain tasks
+eg
+
+int main()
+{
+    if(i>0)
+    {
+        goto display;
+    }
+
+    display:
+    cout<<i;
+    return;
+}
